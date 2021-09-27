@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuItem" customModule="stationery" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Vda-sv-Fdo" id="TAF-8L-x16"/>
+                <outlet property="lblTitle" destination="0n4-KR-oJ7" id="C2j-qp-WFc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0n4-KR-oJ7" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                    <rect key="frame" x="20" y="10" width="335" height="80"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="11"/>
+                    <color key="textColor" name="Black"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontMm" value="bold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSizeMm">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontEng" value="bold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSizeEng">
+                            <real key="value" value="11"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-oG-vIS">
+                    <rect key="frame" x="0.0" y="99" width="375" height="1"/>
+                    <color key="backgroundColor" name="Silver"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="piL-x4-hFd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-sv-Fdo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xMb-oG-vIS" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0lM-6E-EyT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0n4-KR-oJ7" secondAttribute="bottom" constant="10" id="Cir-OS-03a"/>
+                <constraint firstItem="xMb-oG-vIS" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DLF-XT-g61"/>
+                <constraint firstItem="Vda-sv-Fdo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="K8f-wi-Jmj"/>
+                <constraint firstItem="Vda-sv-Fdo" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="NyO-zp-gkT"/>
+                <constraint firstItem="xMb-oG-vIS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RNI-kS-wW8"/>
+                <constraint firstItem="Vda-sv-Fdo" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Sbe-d4-jk2"/>
+                <constraint firstItem="0n4-KR-oJ7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="VoU-H8-ZoG"/>
+                <constraint firstItem="0n4-KR-oJ7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="ZQf-Lv-Vrv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0n4-KR-oJ7" secondAttribute="trailing" constant="20" id="wNU-ag-ifP"/>
+                <constraint firstItem="Vda-sv-Fdo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xI7-XV-FYL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="122.33883058470765"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Silver">
+            <color red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

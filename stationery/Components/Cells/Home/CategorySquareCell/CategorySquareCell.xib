@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategorySquareCell" customModule="stationery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0P-Nz-Zge">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ile-qF-Vio">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igg-1R-Je1">
+                                <rect key="frame" x="10" y="90.5" width="180" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Igg-1R-Je1" secondAttribute="bottom" constant="10" id="5Ck-jo-5qp"/>
+                            <constraint firstAttribute="trailing" secondItem="Igg-1R-Je1" secondAttribute="trailing" constant="10" id="JS6-RD-0Gd"/>
+                            <constraint firstItem="Igg-1R-Je1" firstAttribute="centerY" secondItem="Ile-qF-Vio" secondAttribute="centerY" id="NyK-Zh-4g8"/>
+                            <constraint firstItem="Igg-1R-Je1" firstAttribute="leading" secondItem="Ile-qF-Vio" secondAttribute="leading" constant="10" id="gz1-Gx-n0X"/>
+                            <constraint firstItem="Igg-1R-Je1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ile-qF-Vio" secondAttribute="top" constant="10" id="nQM-gf-vGK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="q0P-Nz-Zge" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UM6-Hx-bfj"/>
+                <constraint firstItem="Ile-qF-Vio" firstAttribute="bottom" secondItem="q0P-Nz-Zge" secondAttribute="bottom" id="dUG-MR-spb"/>
+                <constraint firstItem="Ile-qF-Vio" firstAttribute="leading" secondItem="q0P-Nz-Zge" secondAttribute="leading" id="gV3-dk-R9n"/>
+                <constraint firstItem="q0P-Nz-Zge" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jYH-LU-e06"/>
+                <constraint firstItem="Ile-qF-Vio" firstAttribute="trailing" secondItem="q0P-Nz-Zge" secondAttribute="trailing" id="n6w-Wi-YDD"/>
+                <constraint firstAttribute="bottom" secondItem="q0P-Nz-Zge" secondAttribute="bottom" id="nok-om-qxa"/>
+                <constraint firstItem="Ile-qF-Vio" firstAttribute="top" secondItem="q0P-Nz-Zge" secondAttribute="top" id="v5h-Pu-zek"/>
+                <constraint firstAttribute="trailing" secondItem="q0P-Nz-Zge" secondAttribute="trailing" id="v9E-RW-cte"/>
+            </constraints>
+            <size key="customSize" width="254" height="295"/>
+            <connections>
+                <outlet property="imgCategory" destination="q0P-Nz-Zge" id="DHF-qF-hip"/>
+                <outlet property="lblTitle" destination="Igg-1R-Je1" id="Uk9-gH-dCO"/>
+            </connections>
+            <point key="canvasLocation" x="-201.44927536231884" y="195.87053571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

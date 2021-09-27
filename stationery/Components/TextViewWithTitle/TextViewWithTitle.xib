@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FWDCircularTT-Book.ttf">
+            <string>FWDCircularTT-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextViewWithTitle" customModule="stationery" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTitle" destination="tKv-FK-T0K" id="hFJ-xb-saC"/>
+                <outlet property="textView" destination="xNL-OA-yNd" id="Kck-TJ-U4T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YwO-vr-FbJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOF-zS-xmZ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tKv-FK-T0K">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                    <fontDescription key="fontDescription" name="FWDCircularTT-Book" family="FWD Circular TT" pointSize="14"/>
+                                    <color key="textColor" name="TimberGreen"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="tKv-FK-T0K" secondAttribute="trailing" id="EZA-Xz-dAC"/>
+                                <constraint firstItem="tKv-FK-T0K" firstAttribute="top" secondItem="EOF-zS-xmZ" secondAttribute="top" id="bRw-rb-tVb"/>
+                                <constraint firstItem="tKv-FK-T0K" firstAttribute="leading" secondItem="EOF-zS-xmZ" secondAttribute="leading" id="mqA-nf-8V2"/>
+                                <constraint firstAttribute="bottom" secondItem="tKv-FK-T0K" secondAttribute="bottom" id="nAH-53-f9X"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNL-OA-yNd" customClass="TextView" customModule="stationery" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="414" height="70"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YwO-vr-FbJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CA4-vO-gmZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YwO-vr-FbJ" secondAttribute="bottom" id="Gkr-pn-evp"/>
+                <constraint firstItem="YwO-vr-FbJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="M75-z7-Ryo"/>
+                <constraint firstItem="YwO-vr-FbJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="rHt-v2-txh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TimberGreen">
+            <color red="0.094117647058823528" green="0.18823529411764706" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ItemHeader" customModule="stationery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="518" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uBW-ig-jd0">
+                    <rect key="frame" x="20" y="10" width="478" height="101"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuW-K7-Rdz" userLabel="Sorting View">
+                            <rect key="frame" x="0.0" y="0.0" width="478" height="90"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiP-2a-8uZ" customClass="PickerView" customModule="stationery" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="90"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="viewBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="rightActionButtonImage" value="iconarrowdown"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Default sorting"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7M-T8-z1S">
+                                    <rect key="frame" x="438" y="0.0" width="40" height="90"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="4x5-i2-7nV"/>
+                                    </constraints>
+                                    <state key="normal" image="iconfilter"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="QiP-2a-8uZ" firstAttribute="leading" secondItem="YuW-K7-Rdz" secondAttribute="leading" id="B79-m9-udO"/>
+                                <constraint firstAttribute="bottom" secondItem="Q7M-T8-z1S" secondAttribute="bottom" id="D5q-B3-NM7"/>
+                                <constraint firstItem="QiP-2a-8uZ" firstAttribute="top" secondItem="YuW-K7-Rdz" secondAttribute="top" id="K1O-ic-arE"/>
+                                <constraint firstAttribute="bottom" secondItem="QiP-2a-8uZ" secondAttribute="bottom" id="gGH-gq-JcG"/>
+                                <constraint firstItem="Q7M-T8-z1S" firstAttribute="top" secondItem="YuW-K7-Rdz" secondAttribute="top" id="nSd-sw-wHA"/>
+                                <constraint firstAttribute="trailing" secondItem="Q7M-T8-z1S" secondAttribute="trailing" id="uDh-MP-oHv"/>
+                                <constraint firstItem="QiP-2a-8uZ" firstAttribute="width" secondItem="YuW-K7-Rdz" secondAttribute="width" multiplier="0.6" id="xKE-Ag-6Ia"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-WF-8Iz" userLabel="Divider">
+                            <rect key="frame" x="0.0" y="100" width="478" height="1"/>
+                            <color key="backgroundColor" name="Silver"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="mnC-ri-fg5"/>
+                            </constraints>
+                        </view>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x6D-c4-hvt">
+                            <rect key="frame" x="0.0" y="101" width="478" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFj-eF-Yhy" customClass="PickerView" customModule="stationery" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="234" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="viewBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="rightActionButtonImage" value="iconarrowdown"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Default sorting"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGE-lS-IQO" customClass="PickerView" customModule="stationery" customModuleProvider="target">
+                                    <rect key="frame" x="244" y="0.0" width="234" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="viewBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="rightActionButtonImage" value="iconarrowdown"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Default sorting"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="o8j-0o-jk8"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="uBW-ig-jd0" secondAttribute="trailing" constant="20" id="4Bd-EG-t1f"/>
+                <constraint firstItem="uBW-ig-jd0" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="QRf-tu-j5e"/>
+                <constraint firstAttribute="bottom" secondItem="uBW-ig-jd0" secondAttribute="bottom" constant="20" id="pI3-Cp-TBd"/>
+                <constraint firstItem="uBW-ig-jd0" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="uRH-az-oy8"/>
+            </constraints>
+            <connections>
+                <outlet property="btnFilter" destination="Q7M-T8-z1S" id="wl5-qz-FSi"/>
+                <outlet property="pickerCategory" destination="jFj-eF-Yhy" id="1Mb-ur-ntT"/>
+                <outlet property="pickerPrice" destination="IGE-lS-IQO" id="n3Y-NJ-U9A"/>
+                <outlet property="pickerSorting" destination="QiP-2a-8uZ" id="8ra-wI-lEr"/>
+                <outlet property="stackFilter" destination="x6D-c4-hvt" id="2Ef-NX-5w3"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="161.04910714285714"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="iconarrowdown" width="20" height="20"/>
+        <image name="iconfilter" width="20" height="20"/>
+        <namedColor name="Silver">
+            <color red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

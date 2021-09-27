@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavView" customModule="stationery" customModuleProvider="target">
+            <connections>
+                <outlet property="btnMenu" destination="TZE-Or-97G" id="bFY-TF-r2T"/>
+                <outlet property="btnMusic" destination="1wq-Fe-lWr" id="NXd-Ea-ZxY"/>
+                <outlet property="btnPhone" destination="H7o-8C-i84" id="9X6-7A-UlO"/>
+                <outlet property="btnSearch" destination="mJI-ND-Mon" id="7mc-ig-aEE"/>
+                <outlet property="btnTop" destination="k3q-Pi-kp5" id="jIC-v4-IyW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qH3-dr-f80">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZE-Or-97G" userLabel="Btn Menu">
+                            <rect key="frame" x="20" y="54" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Dl6-dq-DgC"/>
+                                <constraint firstAttribute="width" constant="20" id="moy-cR-gfI"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="iconmenu"/>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eaC-ZY-zJS">
+                            <rect key="frame" x="284" y="54" width="110" height="20"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3q-Pi-kp5">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="k3q-Pi-kp5" secondAttribute="height" multiplier="1:1" id="6uI-5W-h2h"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="icontop"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wq-Fe-lWr">
+                                    <rect key="frame" x="30" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="1wq-Fe-lWr" secondAttribute="height" multiplier="1:1" id="yNX-JO-TZt"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="iconmusic"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-8C-i84">
+                                    <rect key="frame" x="60" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="H7o-8C-i84" secondAttribute="height" multiplier="1:1" id="hs4-ty-dua"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="iconsmartphone"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-ND-Mon">
+                                    <rect key="frame" x="90" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="mJI-ND-Mon" secondAttribute="height" multiplier="1:1" id="B0H-Kk-DqZ"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="iconsearch"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="1wq-Fe-lWr" firstAttribute="width" secondItem="1wq-Fe-lWr" secondAttribute="height" multiplier="1:1" id="Yzu-3s-9p9"/>
+                                <constraint firstItem="mJI-ND-Mon" firstAttribute="width" secondItem="mJI-ND-Mon" secondAttribute="height" multiplier="1:1" id="gk5-wc-FW4"/>
+                                <constraint firstItem="H7o-8C-i84" firstAttribute="width" secondItem="H7o-8C-i84" secondAttribute="height" multiplier="1:1" id="kG1-J4-He7"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="8IO-Th-aHD"/>
+                    <color key="backgroundColor" name="RedDark"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="eaC-ZY-zJS" secondAttribute="bottom" constant="10" id="J7h-Xo-LBs"/>
+                        <constraint firstItem="eaC-ZY-zJS" firstAttribute="top" secondItem="8IO-Th-aHD" secondAttribute="top" constant="10" id="dJR-Q9-rF9"/>
+                        <constraint firstAttribute="trailing" secondItem="eaC-ZY-zJS" secondAttribute="trailing" constant="20" id="nai-3g-mAM"/>
+                        <constraint firstItem="eaC-ZY-zJS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TZE-Or-97G" secondAttribute="trailing" constant="10" id="ors-S4-SdE"/>
+                        <constraint firstItem="8IO-Th-aHD" firstAttribute="bottom" secondItem="TZE-Or-97G" secondAttribute="bottom" constant="10" id="pR7-RE-wDy"/>
+                        <constraint firstItem="TZE-Or-97G" firstAttribute="top" secondItem="8IO-Th-aHD" secondAttribute="top" constant="10" id="qpj-Ww-YCl"/>
+                        <constraint firstItem="TZE-Or-97G" firstAttribute="leading" secondItem="8IO-Th-aHD" secondAttribute="leading" constant="20" id="yIA-ho-gKb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qH3-dr-f80" secondAttribute="bottom" id="72P-IY-PmE"/>
+                <constraint firstItem="qH3-dr-f80" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UX0-Sl-reB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qH3-dr-f80" secondAttribute="trailing" id="bZZ-g5-3GO"/>
+                <constraint firstItem="qH3-dr-f80" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sPh-PP-7uf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="31.884057971014496" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconmenu" width="28" height="28"/>
+        <image name="iconmusic" width="28" height="28"/>
+        <image name="iconsearch" width="28" height="28"/>
+        <image name="iconsmartphone" width="28" height="28"/>
+        <image name="icontop" width="28" height="28"/>
+        <namedColor name="RedDark">
+            <color red="0.53725490196078429" green="0.074509803921568626" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

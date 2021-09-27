@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="CartCell" customModule="stationery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V6u-en-1JT">
+                        <rect key="frame" x="20" y="12" width="410" height="146"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u89-Xu-hKb">
+                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="146"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4a1-ZJ-VpH">
+                                <rect key="frame" x="77.5" y="0.0" width="332.5" height="146"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bVp-Iq-Y70">
+                                        <rect key="frame" x="0.0" y="0.0" width="332.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stylo 1pc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQS-l0-Wt6">
+                                                <rect key="frame" x="0.0" y="0.0" width="302.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                <color key="textColor" name="Black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLX-rl-tjy">
+                                                <rect key="frame" x="312.5" y="0.0" width="20" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJT-1c-ffP">
+                                                        <rect key="frame" x="0.0" y="11.5" width="20" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="6oE-71-VWk"/>
+                                                            <constraint firstAttribute="width" secondItem="ZJT-1c-ffP" secondAttribute="height" multiplier="3:4" id="coL-mG-px4"/>
+                                                        </constraints>
+                                                        <state key="normal" image="icontrash"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ZJT-1c-ffP" secondAttribute="trailing" id="4NT-ao-nAr"/>
+                                                    <constraint firstItem="ZJT-1c-ffP" firstAttribute="leading" secondItem="gLX-rl-tjy" secondAttribute="leading" id="gdP-hN-qYZ"/>
+                                                    <constraint firstItem="ZJT-1c-ffP" firstAttribute="centerY" secondItem="gLX-rl-tjy" secondAttribute="centerY" id="ztz-7s-ULD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="K5D-jh-3ls"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OKU-UO-r4Y">
+                                        <rect key="frame" x="0.0" y="56" width="332.5" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="253" text="PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-fA-jG8" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="230.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <color key="textColor" name="Black"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontMm" value="regular"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontEng" value="regular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeMm">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeEng">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textEnglish" value="PRICE"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textMyanmar" value="စျေးနှုန်း"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="O41-24-0EK">
+                                                <rect key="frame" x="240.5" y="0.0" width="92" height="24"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="900 Ks" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqd-n7-Aky" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                        <color key="textColor" name="Red"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textMyanmar" value=" "/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textEnglish" value=" "/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontMm" value="bold"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontEng" value="bold"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSizeEng">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSizeMm">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="800 Ks" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkQ-0m-MK0" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                                                        <rect key="frame" x="49" y="0.0" width="43" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                        <color key="textColor" name="Red"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textEnglish" value=" "/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textMyanmar" value=" "/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontMm" value="bold"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontEng" value="bold"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSizeMm">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSizeEng">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="asK-cZ-LwX"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JIR-aM-F6L">
+                                        <rect key="frame" x="0.0" y="86" width="332.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUANTITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXl-Yx-SSQ" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="232.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <color key="textColor" name="Black"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontEng" value="regular"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontMm" value="regular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeMm">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeEng">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textEnglish" value="QUANTITY"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textMyanmar" value="အရေအတွက်"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXz-we-myl" customClass="QuantityView" customModule="stationery" customModuleProvider="target">
+                                                <rect key="frame" x="242.5" y="0.0" width="90" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="irX-ZF-hAL"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="C06-FJ-9Oo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9iw-dV-bkP">
+                                        <rect key="frame" x="0.0" y="122" width="332.5" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="252" text="SUBTOTAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPq-c9-Zab" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="161.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <color key="textColor" name="Black"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textMyanmar" value="စုစုပေါင်း"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textEnglish" value="SUBTOTAL"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontMm" value="regular"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontEng" value="regular"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="1000" text="3,400 Ks" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-t2-gQd" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                                                <rect key="frame" x="171.5" y="0.0" width="161" height="24"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                <color key="textColor" name="Red"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontMm" value="bold"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontEng" value="bold"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeMm">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizeEng">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textEnglish" value=" "/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textMyanmar" value=" "/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="tmV-pd-tlT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-nq-rah" userLabel="Divider">
+                        <rect key="frame" x="20" y="170" width="410" height="1"/>
+                        <color key="backgroundColor" name="Silver"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Rie-Jm-2xr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4jx-nq-rah" secondAttribute="bottom" id="7dT-V2-tcR"/>
+                    <constraint firstAttribute="trailing" secondItem="4jx-nq-rah" secondAttribute="trailing" constant="20" id="EKB-Qf-txP"/>
+                    <constraint firstItem="4jx-nq-rah" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OLa-zF-Spk"/>
+                    <constraint firstItem="4jx-nq-rah" firstAttribute="top" secondItem="V6u-en-1JT" secondAttribute="bottom" constant="12" id="PDS-iQ-vs2"/>
+                    <constraint firstAttribute="trailing" secondItem="V6u-en-1JT" secondAttribute="trailing" constant="20" id="PeL-8W-xfc"/>
+                    <constraint firstItem="V6u-en-1JT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="clU-7K-Ap5"/>
+                    <constraint firstItem="u89-Xu-hKb" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.15" id="no3-SB-qjt"/>
+                    <constraint firstItem="V6u-en-1JT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wc3-iD-TeN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnDelete" destination="ZJT-1c-ffP" id="NcX-5P-Hzl"/>
+                <outlet property="imgItem" destination="u89-Xu-hKb" id="JBY-lY-vwb"/>
+                <outlet property="lblName" destination="dQS-l0-Wt6" id="fmJ-GR-j0l"/>
+                <outlet property="lblPrice" destination="kkQ-0m-MK0" id="0aa-eA-BhN"/>
+                <outlet property="lblPriceRegular" destination="eqd-n7-Aky" id="izT-kp-ydi"/>
+                <outlet property="lblPriceTitle" destination="PIg-fA-jG8" id="fn5-bl-9qh"/>
+                <outlet property="lblQuantity" destination="XXl-Yx-SSQ" id="vEA-yc-ey0"/>
+                <outlet property="lblTotal" destination="ceq-t2-gQd" id="Vda-wu-Ap3"/>
+                <outlet property="lblTotalTitle" destination="PPq-c9-Zab" id="vum-KG-8Ti"/>
+                <outlet property="quantityView" destination="gXz-we-myl" id="Vub-zV-9sA"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="136.60714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icontrash" width="36" height="40"/>
+        <namedColor name="Black">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="0.72156862745098038" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Silver">
+            <color red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

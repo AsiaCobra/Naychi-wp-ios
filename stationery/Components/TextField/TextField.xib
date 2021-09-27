@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sk-Modernist-Regular.otf">
+            <string>Sk-Modernist-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextField" customModule="stationery" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLeftAction" destination="169-eB-Nao" id="d0I-RQ-ekK"/>
+                <outlet property="btnLeftActionBottom" destination="EGf-UH-q8a" id="6d0-Mo-YNf"/>
+                <outlet property="btnRightAction" destination="hp8-Wb-Vis" id="hVZ-uj-gre"/>
+                <outlet property="holderView" destination="vSB-2r-yIv" id="H0q-hp-2an"/>
+                <outlet property="leftActionView" destination="aDa-Tp-Og9" id="mDa-e9-GKh"/>
+                <outlet property="leftViewWidth" destination="WaW-2z-fE5" id="LFa-6W-TKi"/>
+                <outlet property="rightActionView" destination="zYe-PV-KkT" id="RxT-TA-y9P"/>
+                <outlet property="textFieldLeading" destination="DFk-66-2Xh" id="CFf-fh-SrD"/>
+                <outlet property="textFieldTailing" destination="QFp-lz-lDB" id="l3l-p7-ntD"/>
+                <outlet property="textFieldView" destination="LrC-Hv-C1E" id="E5w-uS-RUj"/>
+                <outlet property="txtTextField" destination="gPK-nG-9nt" id="wXT-1c-RyC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSB-2r-yIv" userLabel="Holder View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-gm-dF0" userLabel="Holder Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDa-Tp-Og9" userLabel="Left Action View">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="169-eB-Nao">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="169-eB-Nao" firstAttribute="leading" secondItem="aDa-Tp-Og9" secondAttribute="leading" id="2In-NK-uNN"/>
+                                        <constraint firstAttribute="bottom" secondItem="169-eB-Nao" secondAttribute="bottom" id="EGf-UH-q8a"/>
+                                        <constraint firstAttribute="width" constant="50" id="WaW-2z-fE5"/>
+                                        <constraint firstItem="169-eB-Nao" firstAttribute="top" secondItem="aDa-Tp-Og9" secondAttribute="top" id="cMu-Sh-1gJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="169-eB-Nao" secondAttribute="trailing" id="iCe-IR-ERZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrC-Hv-C1E" userLabel="Text Field View">
+                                    <rect key="frame" x="50" y="0.0" width="312" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gPK-nG-9nt" userLabel="Text Field">
+                                            <rect key="frame" x="7" y="12" width="298" height="26"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" name="Black"/>
+                                            <fontDescription key="fontDescription" name="Sk-Modernist-Regular" family="Sk-Modernist" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="gPK-nG-9nt" firstAttribute="top" secondItem="LrC-Hv-C1E" secondAttribute="top" constant="12" id="1hH-QG-VzO"/>
+                                        <constraint firstItem="gPK-nG-9nt" firstAttribute="leading" secondItem="LrC-Hv-C1E" secondAttribute="leading" constant="7" id="DFk-66-2Xh"/>
+                                        <constraint firstAttribute="bottom" secondItem="gPK-nG-9nt" secondAttribute="bottom" constant="12" id="GWD-rg-Zhv"/>
+                                        <constraint firstAttribute="trailing" secondItem="gPK-nG-9nt" secondAttribute="trailing" constant="7" id="QFp-lz-lDB"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYe-PV-KkT" userLabel="Right Action View">
+                                    <rect key="frame" x="362" y="0.0" width="52" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-Wb-Vis" userLabel="Btn Next">
+                                            <rect key="frame" x="0.0" y="0.0" width="52" height="50"/>
+                                            <color key="tintColor" name="Dark Gray"/>
+                                            <state key="normal" image="iconcross"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="hp8-Wb-Vis" firstAttribute="top" secondItem="zYe-PV-KkT" secondAttribute="top" id="06W-QZ-Rhy"/>
+                                        <constraint firstAttribute="bottom" secondItem="hp8-Wb-Vis" secondAttribute="bottom" id="9vi-L3-8Nc"/>
+                                        <constraint firstAttribute="trailing" secondItem="hp8-Wb-Vis" secondAttribute="trailing" id="VO4-Ba-Abg"/>
+                                        <constraint firstAttribute="width" constant="52" id="ksV-Z6-jDM"/>
+                                        <constraint firstItem="hp8-Wb-Vis" firstAttribute="leading" secondItem="zYe-PV-KkT" secondAttribute="leading" id="sJC-vd-QXS"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hgb-gm-dF0" firstAttribute="leading" secondItem="vSB-2r-yIv" secondAttribute="leading" id="WVU-9e-aKa"/>
+                        <constraint firstAttribute="trailing" secondItem="hgb-gm-dF0" secondAttribute="trailing" id="YvU-Es-T3S"/>
+                        <constraint firstItem="hgb-gm-dF0" firstAttribute="top" secondItem="vSB-2r-yIv" secondAttribute="top" id="g4E-KU-KRR"/>
+                        <constraint firstAttribute="bottom" secondItem="hgb-gm-dF0" secondAttribute="bottom" id="llj-8i-rGU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vSB-2r-yIv" secondAttribute="trailing" id="1gN-lt-ci2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vSB-2r-yIv" secondAttribute="bottom" id="7Od-oc-ETr"/>
+                <constraint firstItem="vSB-2r-yIv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nzr-LF-Y6m"/>
+                <constraint firstItem="vSB-2r-yIv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QJP-2h-BjO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.59999999999999" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconcross" width="23" height="23"/>
+        <namedColor name="Black">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark Gray">
+            <color red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

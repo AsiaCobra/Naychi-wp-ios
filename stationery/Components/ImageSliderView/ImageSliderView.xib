@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageSliderView" customModule="stationery" customModuleProvider="target">
+            <connections>
+                <outlet property="colImage" destination="s1T-PY-XA5" id="a8S-XG-K1L"/>
+                <outlet property="pageControl" destination="him-6s-86a" id="Wug-oi-Aah"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="s1T-PY-XA5">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="qyd-fd-kJM">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="him-6s-86a">
+                    <rect key="frame" x="140" y="310" width="120.33333333333331" height="26.333333333333314"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="s1T-PY-XA5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0p6-DS-wfN"/>
+                <constraint firstAttribute="bottom" secondItem="s1T-PY-XA5" secondAttribute="bottom" id="AFk-fU-qfl"/>
+                <constraint firstAttribute="bottom" secondItem="him-6s-86a" secondAttribute="top" constant="-10" id="AnL-08-8Z7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s1T-PY-XA5" secondAttribute="trailing" id="E3T-Uc-WD5"/>
+                <constraint firstItem="s1T-PY-XA5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tm5-Bs-tgR"/>
+                <constraint firstItem="him-6s-86a" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="X16-md-Ieo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-19" y="102"/>
+        </view>
+    </objects>
+</document>

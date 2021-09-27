@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FWDCircularTT-Book.ttf">
+            <string>FWDCircularTT-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerViewWithTitle" customModule="stationery" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTitle" destination="Gya-g4-d9Y" id="M7V-lo-m3H"/>
+                <outlet property="pickerView" destination="pLW-1F-db0" id="cQp-72-iao"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-5M-p6Y">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbL-KP-5WK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gya-g4-d9Y" customClass="LanguageLabel" customModule="stationery" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
+                                    <fontDescription key="fontDescription" name="FWDCircularTT-Book" family="FWD Circular TT" pointSize="14"/>
+                                    <color key="textColor" name="TimberGreen"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Gya-g4-d9Y" secondAttribute="trailing" id="0IE-6v-neE"/>
+                                <constraint firstItem="Gya-g4-d9Y" firstAttribute="top" secondItem="ZbL-KP-5WK" secondAttribute="top" id="LYg-Xn-3Za"/>
+                                <constraint firstAttribute="bottom" secondItem="Gya-g4-d9Y" secondAttribute="bottom" id="rOH-cH-9IV"/>
+                                <constraint firstItem="Gya-g4-d9Y" firstAttribute="leading" secondItem="ZbL-KP-5WK" secondAttribute="leading" id="ujn-aV-kAl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLW-1F-db0" customClass="PickerView" customModule="stationery" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="414" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Please select"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="rightActionButtonImage" value="iconarrowdown"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cFO-5M-p6Y" secondAttribute="trailing" id="6Zm-eD-qYg"/>
+                <constraint firstItem="cFO-5M-p6Y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Egq-VB-EXe"/>
+                <constraint firstItem="cFO-5M-p6Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SF8-JM-aqM"/>
+                <constraint firstAttribute="bottom" secondItem="cFO-5M-p6Y" secondAttribute="bottom" id="grj-Dy-eR8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57" y="191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconarrowdown" width="20" height="20"/>
+        <namedColor name="TimberGreen">
+            <color red="0.094117647058823528" green="0.18823529411764706" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

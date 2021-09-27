@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FWDCircularTT-Bold.ttf">
+            <string>FWDCircularTT-Bold</string>
+        </array>
+        <array key="FWDCircularTT-Book.ttf">
+            <string>FWDCircularTT-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogVC" customModule="FWD" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNegative" destination="EgM-dW-KF4" id="3xG-TW-hIc"/>
+                <outlet property="btnPositive" destination="BH2-s9-pJj" id="OrH-4K-l0c"/>
+                <outlet property="divider" destination="W3d-VH-tdX" id="vfH-rn-18Y"/>
+                <outlet property="lblMessage" destination="rQC-a7-GHV" id="DQH-VT-AH5"/>
+                <outlet property="lblTitle" destination="Bbi-9T-vqb" id="Dux-Up-hpC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBackground" destination="AJO-lU-vJ5" id="RMu-rm-fhJ"/>
+                <outlet property="viewContent" destination="TLk-R8-v72" id="RFQ-gZ-8JP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJO-lU-vJ5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLk-R8-v72" userLabel="View Content">
+                    <rect key="frame" x="30" y="368.5" width="354" height="159.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbi-9T-vqb">
+                            <rect key="frame" x="30" y="30" width="294" height="23.5"/>
+                            <fontDescription key="fontDescription" name="FWDCircularTT-Bold" family="FWD Circular TT" pointSize="20"/>
+                            <color key="textColor" name="TimberGreen"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQC-a7-GHV">
+                            <rect key="frame" x="30" y="63.5" width="294" height="19"/>
+                            <fontDescription key="fontDescription" name="FWDCircularTT-Book" family="FWD Circular TT" pointSize="16"/>
+                            <color key="textColor" name="TimberGreen"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uG9-O1-Pw9">
+                            <rect key="frame" x="0.0" y="102.5" width="354" height="57"/>
+                            <subviews>
+                                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWj-7n-a5t">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="0.5"/>
+                                    <color key="backgroundColor" name="TimberGreen"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="KIE-9s-PYI"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-45-abg">
+                                    <rect key="frame" x="0.0" y="0.5" width="354" height="56.5"/>
+                                    <subviews>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgM-dW-KF4">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="56.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="FWDCircularTT-Bold" family="FWD Circular TT" pointSize="16"/>
+                                            <state key="normal" title="Cancel">
+                                                <color key="titleColor" name="TimberGreen"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH2-s9-pJj">
+                                            <rect key="frame" x="177" y="0.0" width="177" height="56.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="FWDCircularTT-Bold" family="FWD Circular TT" pointSize="16"/>
+                                            <state key="normal" title="Confirm">
+                                                <color key="titleColor" name="Tango"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="LlG-fM-b9N"/>
+                            </constraints>
+                        </stackView>
+                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-VH-tdX">
+                            <rect key="frame" x="177" y="102.5" width="0.5" height="57"/>
+                            <color key="backgroundColor" name="TimberGreen"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="ab6-dr-0Zw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="uG9-O1-Pw9" firstAttribute="leading" secondItem="TLk-R8-v72" secondAttribute="leading" id="3gf-bp-vJ8"/>
+                        <constraint firstAttribute="trailing" secondItem="uG9-O1-Pw9" secondAttribute="trailing" id="8R3-Lt-dOQ"/>
+                        <constraint firstItem="W3d-VH-tdX" firstAttribute="top" secondItem="uG9-O1-Pw9" secondAttribute="top" id="F1K-eB-Z0b"/>
+                        <constraint firstItem="rQC-a7-GHV" firstAttribute="leading" secondItem="TLk-R8-v72" secondAttribute="leading" constant="30" id="WSQ-e4-FsU"/>
+                        <constraint firstItem="Bbi-9T-vqb" firstAttribute="top" secondItem="TLk-R8-v72" secondAttribute="top" constant="30" id="Zrx-2S-ADM"/>
+                        <constraint firstAttribute="bottom" secondItem="uG9-O1-Pw9" secondAttribute="bottom" id="beC-8m-HLf"/>
+                        <constraint firstAttribute="trailing" secondItem="Bbi-9T-vqb" secondAttribute="trailing" constant="30" id="bl5-ht-Wkx"/>
+                        <constraint firstItem="W3d-VH-tdX" firstAttribute="bottom" secondItem="uG9-O1-Pw9" secondAttribute="bottom" id="hgU-K1-6yw"/>
+                        <constraint firstItem="Bbi-9T-vqb" firstAttribute="leading" secondItem="TLk-R8-v72" secondAttribute="leading" constant="30" id="qbA-Pv-BzY"/>
+                        <constraint firstAttribute="trailing" secondItem="rQC-a7-GHV" secondAttribute="trailing" constant="30" id="qmX-mP-W7o"/>
+                        <constraint firstItem="W3d-VH-tdX" firstAttribute="centerX" secondItem="uG9-O1-Pw9" secondAttribute="centerX" id="sDu-yQ-qXQ"/>
+                        <constraint firstItem="rQC-a7-GHV" firstAttribute="top" secondItem="Bbi-9T-vqb" secondAttribute="bottom" constant="10" id="uvH-Tp-3X4"/>
+                        <constraint firstItem="uG9-O1-Pw9" firstAttribute="top" secondItem="rQC-a7-GHV" secondAttribute="bottom" constant="20" id="zO1-jr-bCz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AJO-lU-vJ5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8p4-Ce-b3q"/>
+                <constraint firstItem="AJO-lU-vJ5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GPF-mi-axY"/>
+                <constraint firstItem="TLk-R8-v72" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="V1f-9c-6hd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TLk-R8-v72" secondAttribute="trailing" constant="30" id="Vwq-rP-kQJ"/>
+                <constraint firstItem="TLk-R8-v72" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cjt-tp-uFC"/>
+                <constraint firstAttribute="bottom" secondItem="AJO-lU-vJ5" secondAttribute="bottom" id="jIv-Oj-moG"/>
+                <constraint firstItem="AJO-lU-vJ5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pRI-eb-3Jr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Tango">
+            <color red="0.90980392156862744" green="0.46666666666666667" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TimberGreen">
+            <color red="0.094117647058823528" green="0.18823529411764706" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
